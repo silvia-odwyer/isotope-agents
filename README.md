@@ -1,9 +1,9 @@
 # isotope-agents
 
-<p align="center">
+<!-- <p align="center">
   <a href="" rel="noopener">
  <img src=""></a>
-</p>
+</p> -->
 
 <h3 align="center">isotope-agents</h3>
 
@@ -11,7 +11,7 @@
     
   [![Status](https://img.shields.io/badge/status-active-success.svg?logo=statuspal)]()
   [![GitHub Issues](https://img.shields.io/github/issues/silvia-odwyer/photon.svg?logo=github)](https://github.com/silvia-odwyer/isotope-agents/issues)
-  [![Gitter Chat](https://img.shields.io/gitter/room/silvia-odwyer/isotope-agents?color=cyan&logo=Gitter)](https://gitter.im/isotope/community "Gitter chat")
+  <!-- [![Gitter Chat](https://img.shields.io/gitter/room/silvia-odwyer/isotope-agents?color=cyan&logo=Gitter)](https://gitter.im/isotope/community "Gitter chat") -->
 
 
 </div>
@@ -68,13 +68,14 @@ The sites below are fully-generated using Isotope's AI Agents about the [photon]
 - **Dark theme landing page** - [Preview]()
 - **Light theme landing page** - [Preview]() -->
 
-^^^ Add yours above by submitting a PR. (Plus, a showcase gallery is coming soon, where you can showcase your generated pages.)
+<!-- ^^^ Add yours above by submitting a PR. (Plus, a showcase gallery is coming soon, where you can showcase your generated pages.) -->
 
 ### Documentation site types
 There are many types of frameworks you can use for your documentation site:
-- **Vitepress** 
-- **MKDocs** 
-- **Docsify**
+- [Vitepress](https://app.getisotope.com/generate?for=gh_repo_docs&framework=vitepress)
+- [MKDocs](https://app.getisotope.com/generate?for=gh_repo_docs&framework=mkdocs)
+- [Docsify](https://app.getisotope.com/generate?for=gh_repo_docs&framework=docsify)
+
 <!-- - **Vitepress** - [Preview]()
 - **MKDocs** - [Preview]()
 - **Docsify** - [Preview]() -->
@@ -114,7 +115,6 @@ If there are any issues involving setting up the websites etc, make sure to open
 - [Gitter](https://gitter.im/isotope-agents/community)
 - Discussions
 <!--- Contact me on Twitter-->
-
 
 ## Maintained by
 This project is maintained by:
