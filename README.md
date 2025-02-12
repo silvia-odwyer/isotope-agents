@@ -33,7 +33,7 @@ With a web interface, you can generate full documentation sites and landing page
 ## How Do I Get My Website?
 There are different ways to generate sites:
 
-1. **🌐 Web interface**: Can be useful if you'd like to preview the results from the comfort of your web browser.
+1. **🌐 Web interface**: Can be useful if you'd like to preview the results from the comfort of your web browser. See the links below.
 2. **Open an issue**: Just open an issue here with a link to your repo and the template you'd like
 3. **💻Command-line (coming soon)**: I am working on a command-line tool, which you can use to locally spin up your documentation and landing page sites.
 
@@ -49,29 +49,35 @@ Using the command-line tool, you can generate documentation for your sites local
 ### Web interface
 A web interface is available, which contains full previews of all the templates that you can generate. You can also generate and preview the generated sites there.
 
-[Go to Web Interface](https://silvia-odwyer.github.io/isotope-agents)
+Get started by clicking the links below (whether you'd like to create a landing page or documentation):
+
+[Generate Landing Page](https://app.getisotope.com/generate?for=gh_repo_landing&template=lumeryxai)
+[Generate Documentation](https://app.getisotope.com/generate?for=gh_repo_docs&framework=vitepress)
 
 <!-- ### Opening an Issue
 Simply open an issue here and provide a link to your open-source repo. Then, choose a template from the selection here.
 
 You can export the results to HTML/CSS or Next.js. If there are any other edits you'd like to make, you can ask your assigned AI agent or the maintainer of this repo (who is human!). -->
 
-## Preview some sites generated
+<!-- ## Preview some sites generated
 The sites below are fully-generated using Isotope's AI Agents about the [photon](https://github.com/silvia-odwyer/photon) open-source library: 
 
 - **Vitepress example** - [Preview]()
 - **MKDocs example** - [Preview]()
 - **Docsify example** - [Preview]()
 - **Dark theme landing page** - [Preview]()
-- **Light theme landing page** - [Preview]()
+- **Light theme landing page** - [Preview]() -->
 
 ^^^ Add yours above by submitting a PR. (Plus, a showcase gallery is coming soon, where you can showcase your generated pages.)
 
 ### Documentation site types
 There are many types of frameworks you can use for your documentation site:
-- **Vitepress** - [Preview]()
+- **Vitepress** 
+- **MKDocs** 
+- **Docsify**
+<!-- - **Vitepress** - [Preview]()
 - **MKDocs** - [Preview]()
-- **Docsify** - [Preview]()
+- **Docsify** - [Preview]() -->
 <!-- - **Docusaurus** - [Preview]() -->
 <!-- - **Fumadocs** - [Preview]() -->
 
