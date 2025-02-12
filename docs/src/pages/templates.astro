@@ -1,0 +1,119 @@
+---
+import ExampleGrid from "@/components/example-grid.astro";
+import PageHeader from "@/components/page-header.astro";
+import { navMenuConfig } from "@/config/nav-menu";
+import MainLayout from "@/layouts/main-layout.astro";
+
+const examples = navMenuConfig.examplesNav[0].items;
+const pages = navMenuConfig.pagesNav[0].items;
+
+const landingTemplates = {
+  
+      items: [
+        {
+          title: "Atomic",
+          id: "atomic",
+          description: "A landing page template with a modern design",
+          image: "https://res.cloudinary.com/dnzjbmzag/image/upload/v1694697366/Isotope_Startup_Landing_Page_Template.png",
+        },
+        {
+          title: "Lumeryx",
+          id: "lumeryxai",
+          description: "Dark-theme landing page.",
+          image: "https://res.cloudinary.com/dnzjbmzag/image/upload/v1731008938/LumeryxAI.png",
+        },
+        {
+          title: "Element",
+          id: "element",
+          description: "Modern, minimalist landing page.",
+          image: "https://res.cloudinary.com/dnzjbmzag/image/upload/v1700003934/Element_Hero_Section.png",
+        },
+        {
+          title: "Modern",
+          id: "modern",
+          description: "Pastel-themed landing page.",
+          image: "https://res.cloudinary.com/dnzjbmzag/image/upload/v1695913903/Template_4_Hero.png",
+        },
+        // {
+        //   title: "Cubic",
+        //   id: "cubic",
+        //   href: "/waitlist",
+        //   description:
+        //     "A waitlist form using Astro DB, React Hook Form & Sonner. Static page.",
+        //   image: "/images/examples/waitlist.jpg",
+        //   forceReload: true,
+        // },
+        // {
+        //   title: "Changelog",
+        //   href: "changelog",
+        //   description: "A reproduction of Starlog template with Tailwind CSS.",
+        //   image: "/images/examples/changelog.jpg",
+        // },
+      ],
+};
+
+const docsFrameworks = {
+  
+  items: [
+    {
+      title: "Vitepress",
+      id: "vitepress",
+      href: "/landing",
+      description: "Create a Vitepress docs site for your repo",
+      image: "/images/examples/landing.jpg",
+    },
+    {
+      title: "MKDocs",
+      id: "mkdocs",
+      href: "/releases",
+      description: "MKDocs Material template",
+      image: "/images/examples/changelog.jpg",
+    },
+    {
+      title: "Docsify",
+      id: "docsify",
+      href: "/pricing",
+      description: "Docsify site with a gradient cover page",
+      image: "/images/examples/pricing.jpg",
+    },
+    // {
+    //   title: "Docusaurus",
+    //   id: "docusaurus",
+    //   href: "/waitlist",
+    //   description:
+    //     "A waitlist form using Astro DB, React Hook Form & Sonner. Static page.",
+    //   image: "/images/examples/waitlist.jpg",
+    //   forceReload: true,
+    // },
+    // {
+    //   title: "Vitepress Catppuccin",
+    //   id: "vitepressCatppuccin",
+    //   href: "/pricing",
+    //   description: "Pricing cards, FAQs and more content with price.",
+    //   image: "/images/examples/pricing.jpg",
+    // },
+    // {
+    //   title: "Fumadocs",
+    //   id: "fumadocs",
+    //   href: "/pricing",
+    //   description: "Pricing cards, FAQs and more content with price.",
+    //   image: "/images/examples/pricing.jpg",
+    // },
+  ],
+};
+
+---
+
+<MainLayout title="">
+  <div class="bg-background-200">
+    <section class="container py-12">
+      <PageHeader
+        heading="Discovery"
+        text="Different templates and frameworks available for building your site or docs"
+      />
+
+      <ExampleGrid title="Landing pages" items={landingTemplates.items} pageType="landingPage"/>
+      <ExampleGrid title="Documentation frameworks" items={docsFrameworks.items} pageType="docs"/>
+    </section>
+  </div>
+</MainLayout>

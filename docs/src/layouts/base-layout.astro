@@ -1,0 +1,37 @@
+---
+import BaseHead from "@/components/layout/base-head.astro";
+import TailwindIndicator from "@/components/tailwind-indicator.astro";
+// NOTE: work with { Toaster } from "@/components/ui/sonner" but need to update dark theme
+import { Toaster } from "sonner";
+import { cn } from "@/lib/utils";
+
+type Props = {
+  title: string;
+  description?: string;
+  bodyClass?: string;
+};
+
+const { title, description, bodyClass } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <BaseHead title={title} description={description} />
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) { 
+          var scrollpos = localStorage.getItem('scrollpos');
+          if (scrollpos) window.scrollTo(0, scrollpos);
+      });
+
+      window.onbeforeunload = function(e) {
+          localStorage.setItem('scrollpos', window.scrollY);
+      };
+  </script>
+  </head>
+  <body class={cn("flex flex-col min-h-screen", bodyClass)}>
+    <slot />
+    <TailwindIndicator />
+    <Toaster richColors client:only="react" />
+  </body>
+</html>
